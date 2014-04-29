@@ -30,12 +30,12 @@ public class BookController {
 	@Autowired
 	BookService bookService;
 
-	@RequestMapping(method = RequestMethod.GET)
-	@ResponseBody
-	public List<Book> getBooks() {
-		List<Book> books = bookService.getBooks();
-		return books;
-	}
+	//@RequestMapping(method = RequestMethod.GET)
+	//@ResponseBody
+	//public List<Book> getBooks() {
+	//	List<Book> books = bookService.getBooks();
+	//	return books;
+	//}
 //	
 //	@RequestMapping(method = RequestMethod.GET)
 //	@ResponseBody
