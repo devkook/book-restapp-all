@@ -4,7 +4,7 @@
 	<groupId>devfun.bookstore</groupId>
 	<artifactId>restapp</artifactId>
 	<packaging>war</packaging>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.1.0-SNAPSHOT</version>
 	<name>restapp Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 
@@ -214,7 +214,76 @@
 					</argLine>
 				</configuration>
 			</plugin>
+
+            <!--Goals=findbugs:findbugs Url=http://mojo.codehaus.org/findbugs-maven-plugin/plugin-info.html-->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>findbugs-maven-plugin</artifactId>
+                <version>2.5.3</version>
+            </plugin>
+
 		</plugins>
 	</build>
+
+    <!--http://maven.apache.org/pom.html-->
+
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+            <comments>A business-friendly OSS license</comments>
+        </license>
+    </licenses>
+
+    <organization>
+        <name>Devkook</name>
+        <url>http://devkook.tumblr.com</url>
+    </organization>
+
+    <developers>
+        <developer>
+            <id>devkook</id>
+            <name>Devin kook</name>
+            <email>devinkook@gmail.com</email>
+            <url>http://eric.propellors.net</url>
+            <organization>Devkook</organization>
+            <organizationUrl>http://devkook.tumblr.com</organizationUrl>
+            <roles>
+                <role>architect</role>
+                <role>developer</role>
+            </roles>
+            <timezone>+9</timezone>
+            <properties>
+                <picUrl>http://devkook.tumblr.com</picUrl>
+            </properties>
+        </developer>
+    </developers>
+
+    <issueManagement>
+        <system>GitHub Issues</system>
+        <url>https://github.com/devkook/book-restapp-all/issues</url>
+    </issueManagement>
+
+    <ciManagement>
+        <system>jenkins</system>
+        <url>https://devkook.ci.cloudbees.com</url>
+        <notifiers>
+            <notifier>
+                <type>mail</type>
+                <sendOnError>true</sendOnError>
+                <sendOnFailure>true</sendOnFailure>
+                <sendOnSuccess>true</sendOnSuccess>
+                <sendOnWarning>true</sendOnWarning>
+                <configuration><address>devinkook@gamil.com</address></configuration>
+            </notifier>
+        </notifiers>
+    </ciManagement>
+
+    <scm>
+        <url>https://github.com/devkook/book-restapp-all</url>
+        <connection>scm:git:git://github.com:devkook/book-restapp-all.git</connection>
+        <developerConnection>scm:git:git://github.com:devkook/book-restapp-all.git</developerConnection>
+    </scm>
 
 </project>
