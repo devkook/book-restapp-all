@@ -1,7 +1,7 @@
 # 머리말
 * 아래 책을 따라 치고 배포하고 부하를 주면서 이리 저리 살펴 함께 공부하고자 합니다.
 * 책의 내용과 같고 실배포하여 동작하는 버전은 v1.0.0-book 으로 tag 되었으며,
-* 이후의 마이드스톤 개발내용을 점차 진행하며 추가 하겠습니다.
+* 이후의 마일드스톤 개발내용을 점차 진행하며 추가 하겠습니다.
 
 # 실행
 * mvn package -Dmaven.test.skip=true
@@ -12,9 +12,11 @@
 
 # 테스트
 * http://restapp.devkook.cloudbees.net/books
-
-
 * http://restapp.devkook.cloudbees.net/books/1
+
+# 품질지표
+* https://devkook.ci.cloudbees.com/
+![cloudbees_jenkins](https://raw.githubusercontent.com/devkook/book-restapp-all/master/share/image/jenkins/cloudbees_jenkins_findbugs.png)
 
 # 책소개
 * RESTful 웹 서비스 구축하기 : 실전 예제로 배우는 REST 방식의 스프링 웹 서비스, 2014, 김강우 ( PDF 구매 및 맛보기 : http://www.hanbit.co.kr/ebook/look.html?isbn=9788968486890 )
