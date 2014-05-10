@@ -13,6 +13,19 @@
 # 테스트
 * http://restapp.devkook.cloudbees.net/books
 * http://restapp.devkook.cloudbees.net/books/1
+* 천개의 아이템중 랜덤하게 또는 전부를 GET
+```
+~# while(true)
+> do
+> curl http://restapp.devkook.cloudbees.net/books/$((RANDOM%1000))
+> curl http://restapp.devkook.cloudbees.net/books/$((RANDOM%1000))
+> curl http://restapp.devkook.cloudbees.net/books/$((RANDOM%1000))
+> curl http://restapp.devkook.cloudbees.net/books/$((RANDOM%1000))
+> curl http://restapp.devkook.cloudbees.net/books/$((RANDOM%1000))
+> curl http://restapp.devkook.cloudbees.net/books
+> sleep 1
+> done
+```
 
 # 품질지표
 * https://devkook.ci.cloudbees.com/
