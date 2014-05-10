@@ -37,8 +37,7 @@ public class AppConfig implements TransactionManagementConfigurer  {
 	@Bean(destroyMethod = "close")
 	public DataSource dataSource() {
 	        String driverClass = "com.mysql.jdbc.Driver";
-	        String url = "jdbc:mysql://us-cdbr-cb-east-01.cleardb.net:3306/devkook";
-	        //cb_devkook - Database/Schema Name
+	        String url = "jdbc:mysql://us-cdbr-cb-east-01.cleardb.net:3306/cb_devkook";
 	        String username = "bf2680dae9d429";
 	        String password = "fd7bcc05";
 	
