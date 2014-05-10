@@ -1,2 +1,9 @@
-# .travis.yml
 language: java
+jdk:
+  - oraclejdk7
+  - openjdk7
+branches:
+  only:
+    - master
+before_install: 'mvn -version'
+install: 'mvn clean package -DskipTests'
