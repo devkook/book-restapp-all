@@ -45,7 +45,7 @@ public class AppConfig implements TransactionManagementConfigurer  {
 	        ds.setDriverClass(driverClass);
 	        ds.setJdbcUrl(url);
 	        ds.setUsername(username);
-	        ds.setPassword(password);
+	        ds.setPassword(System.getProperty("db_passwd"));
         	return ds;
     	}
 	
