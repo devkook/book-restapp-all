@@ -12,7 +12,7 @@ public class JdbcStudy {
 
     //  Database credentials
     static final String USER = "bf2680dae9d429";
-    static final String PASS = "fd7bcc05";
+    static final String PASS = System.getProperty("db_passwd");
 
     public static void main(String[] args) {
         Connection conn = null;

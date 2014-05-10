@@ -38,14 +38,14 @@ public class AppConfig implements TransactionManagementConfigurer  {
 	        String driverClass = "com.mysql.jdbc.Driver";
 	        String url = "jdbc:mysql://us-cdbr-cb-east-01.cleardb.net:3306/cb_devkook";
 	        String username = "bf2680dae9d429";
-	        String password = "fd7bcc05";
+	        String password = System.getProperty("db_passwd");
 	
 	        BoneCPDataSource ds = new BoneCPDataSource();
 	
 	        ds.setDriverClass(driverClass);
 	        ds.setJdbcUrl(url);
 	        ds.setUsername(username);
-	        ds.setPassword(System.getProperty("db_passwd"));
+	        ds.setPassword(password);
         	return ds;
     	}
 	
